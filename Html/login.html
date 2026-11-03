@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login · Moda com Propósito</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="../Css/login.css">
+</head>
+<body>
+
+  <section class="panel-visual">
+    <div class="brand">Moda com Propósito</div>
+    <div class="quote">
+      <p class="big">"Elegância que reflete sua essência."</p>
+      <span>Moda, autoestima e inteligência emocional feminina.</span>
+    </div>
+  </section>
+
+  <section class="panel-form">
+    <div class="form-wrap">
+      <div class="monogram">M</div>
+      <h1>Bem-vinda de volta</h1>
+      <p class="subtitle">Entre para continuar sua jornada com a gente</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <div class="field">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required minlength="6">
+        </div>
+
+        <div class="row-between">
+          <label class="remember">
+            <input type="checkbox" id="lembrar" name="lembrar">
+            Lembrar de mim
+          </label>
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+
+        <button type="submit" class="btn-primary">Entrar</button>
+      </form>
+
+      <div class="divider">ou</div>
+
+      <button type="button" class="btn-secondary" onclick="alert('Login com Google (conectar backend de autenticação)')">
+        Continuar com Google
+      </button>
+
+      <p class="footer-note">
+        Ainda não tem conta? <a href="#">Cadastre-se</a>
+      </p>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const senha = document.getElementById('senha').value;
+
+      if(!email || !senha){
+        alert('Preencha e-mail e senha para continuar.');
+        return;
+      }
+
+      console.log('Tentativa de login:', { email });
+      alert('Login enviado! Conecte este formulário à sua API de autenticação.');
+    });
+  </script>
+
+</body>
+</html>
