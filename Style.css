@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff9fb;
+    color:#444;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #c79ab2;
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#c48b9f;
+}
+
+.banner{
+    height:85vh;
+    background:
+    linear-gradient(rgba(255,255,255,0.35),
+    rgba(255,255,255,0.35)),
+    url("https://images.unsplash.com/photo-1496747611176-843222e1e57c")
+    center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.banner h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    color:#7d5163;
+    margin-bottom:20px;
+}
+
+.banner p{
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    text-decoration:none;
+    background:#c48b9f;
+    color:white;
+    padding:14px 35px;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#b4758c;
+}
+
+.banner-content{
+    max-width:700px;
+    text-align:center;
+}
+
+.explorar{
+    position:relative;
+    display:inline-block;
+}
+
+.explorar-menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translateX(-50%);
+    background:white;
+    min-width:190px;
+    padding-top:10px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    overflow:hidden;
+    z-index:100;
+}
+
+.explorar-menu a{
+    display:block;
+    padding:12px 18px;
+    text-decoration:none;
+    color:#7d5163;
+    font-family:'Poppins',sans-serif;
+    font-size:14px;
+}
+
+.explorar-menu a:hover{
+    background:#fff0f5;
+    color:#d499ae;
+}
+
+.explorar:hover .explorar-menu{
+    display:block;
+}
+
+.sobre{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.sobre h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    color:#7d5163;
+    margin-bottom:20px;
+}
+
+.sobre p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.destaques{
+    padding:50px 8%;
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    object-position:center top;
+}
+
+.card h3{
+    padding:20px 20px 10px;
+    color:#7d5163;
+}
+
+.card p{
+    padding:0 20px 20px;
+}
+
+.card-conteudo{
+    padding:20px 20px 25px;
+
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+
+    min-height:190px;
+}
+
+.card h3{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:1.8rem;
+
+    font-weight:600;
+
+    color:#7d5163;
+
+    margin-bottom:8px;
+}
+
+.card p{
+    padding:0;
+
+    margin:0 auto;
+
+    max-width:260px;
+
+    font-size:0.9rem;
+
+    line-height:1.6;
+
+    color:#666;
+}
+
+.card-botao{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    width:max-content;
+
+    min-width:150px;
+
+    height:42px;
+
+    margin:20px auto 0;
+
+    border:1px solid #c79ab2;
+
+    border-radius:25px;
+
+    background:transparent;
+
+    color:#8a6072;
+
+    text-decoration:none;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:0.85rem;
+
+    font-weight:500;
+
+    transition:0.3s ease;
+}
+
+.card-botao:hover{
+    background:#c79ab2;
+
+    color:white;
+}
+
+footer{
+    background:#f4dce4;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+    color:#6d4b58;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .banner h1{
+        font-size:2.8rem;
+    }
+
+    .card{
+        width:100%;
+    }
+}
+
+.pagina-looks {
+    background: #fff9fb;
+}
+
+.pagina-looks .sobre {
+    padding: 65px 20px 45px;
+    text-align: center;
+}
+
+.pagina-looks .sobre h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #7d5163;
+    margin-bottom: 15px;
+}
+
+.pagina-looks .sobre p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #777;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.pagina-looks .categoria {
+    max-width: 1250px;
+    margin: 0 auto 90px;
+    padding: 0 30px;
+}
+
+.pagina-looks .titulo-categoria {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.pagina-looks .titulo-categoria span {
+    display: none;
+}
+
+.pagina-looks .titulo-categoria h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #7d5163;
+
+    margin: 0 0 8px;
+}
+
+.pagina-looks .titulo-categoria h2::after {
+    content: "";
+    display: block;
+
+    width: 45px;
+    height: 2px;
+
+    background: #c48b9f;
+
+    margin: 12px auto 14px;
+}
+
+.pagina-looks .titulo-categoria p {
+    margin: 0 auto;
+
+    max-width: 600px;
+
+    color: #777;
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+}
+
+.pagina-looks .looks-galeria {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    width: 100%;
+}
+
+.pagina-looks .look {
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.07);
+
+    transition: 0.35s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pagina-looks .look:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 14px 30px rgba(125, 81, 99, 0.15);
+}
+
+.pagina-looks .look img {
+    display: block;
+
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+.pagina-looks .look:hover img {
+    transform: scale(1.03);
+}
+
+.pagina-looks .look h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 1.65rem;
+
+    font-weight: 600;
+
+    color: #7d5163;
+
+    text-align: center;
+
+    margin: 0;
+
+    padding: 20px 20px 8px;
+}
+
+.pagina-looks .look p {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 0.88rem;
+
+    line-height: 1.7;
+
+    color: #666;
+
+    text-align: center;
+
+    margin: 0;
+
+    padding: 0 25px 25px;
+}
+
+.pagina-looks .look p::after {
+    content: "✦";
+
+    display: block;
+
+    color: #c48b9f;
+
+    font-size: 0.7rem;
+
+    margin-top: 14px;
+}
+
+
+@media (max-width: 950px) {
+
+    .pagina-looks .looks-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .pagina-looks .sobre {
+        padding: 50px 20px 35px;
+    }
+
+    .pagina-looks .sobre h2 {
+        font-size: 2.6rem;
+    }
+
+    .pagina-looks .categoria {
+        padding: 0 18px;
+        margin-bottom: 65px;
+    }
+
+    .pagina-looks .titulo-categoria h2 {
+        font-size: 2.4rem;
+    }
+
+    .pagina-looks .looks-galeria {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .pagina-looks .look img {
+        height: 380px;
+    }
+
+}
+
+.sair{
+    color:#555;
+    font-weight:500;
+}
+.sair:hover{
+    color:#c48b9f;
+}
+
+.pagina-looks .look img {
+    cursor: zoom-in;
+}
+
+.imagem-zoom {
+    display: none;
+
+    position: fixed;
+    z-index: 9999;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(40, 25, 32, 0.75);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+.imagem-zoom img {
+    max-width: 90%;
+    max-height: 90%;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 15px;
+
+    box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+}
+
+.fechar {
+    position: absolute;
+
+    top: 25px;
+    right: 35px;
+
+    font-size: 40px;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-family: Arial, sans-serif;
+
+    transition: 0.3s;
+}
+
+.fechar:hover {
+    color: #e5b6c7;
+}
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulher Virtuosa</title>
+    <link rel="stylesheet" href="../Css/Style.css">
+</head>
+
+<div id="imagemZoom" class="imagem-zoom" onclick="fecharImagem()">
+    <span class="fechar">&times;</span>
+    <img id="imagemAmpliada" src="" alt="">
+</div>
+
+<script>
+function abrirImagem(imagem) {
+    document.getElementById("imagemAmpliada").src = imagem.src;
+    document.getElementById("imagemZoom").style.display = "flex";
+}
+
+function fecharImagem() {
+    document.getElementById("imagemZoom").style.display = "none";
+}
+</script>
+
+<body>
+
+<header>
+       <div class="logo">
+    <img src="../Img/Moda.png" alt="Logo Moda com Propósito"
+    onclick="abrirImagem(this)">
+    <span>Moda com Propósito</span>
+</div>
+
+    <nav>
+        <ul>
+            <li><a href="Homepage.html">Início</a></li>
+            <li><a href="Looks.html">Looks</a></li>
+            <li><a href="Curadoria.html">Curadoria</a></li>
+            <li><a href="Virtuosa.html">Mulher Virtuosa</a></li>
+            <li><a href="Apoio.html">Apoio</a></li>
+            <li><a href="Login.html" class="sair">Sair</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="sobre">
+    <h2>Espaço da Mulher Virtuosa</h2>
+
+    <p>
+        A verdadeira elegância nasce do caráter, da sabedoria e do respeito.
+        Aqui você encontrará conteúdos sobre autoestima, etiqueta e
+        inteligência emocional feminina.
+    </p>
+</section>
+
+<section class="destaques">
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>Autoestima</h3>
+        <p>
+            Aprenda a reconhecer seu valor e desenvolver confiança em si mesma.
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>Etiqueta</h3>
+        <p>
+            Pequenos gestos de educação e respeito fazem toda a diferença.
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>Inteligência Emocional</h3>
+        <p>
+            Entenda suas emoções e fortaleça seus relacionamentos.
+        </p>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <p class="copyright">
+            © 2026 Moda com Propósito
+        </p>
+
+        <p class="devs">
+            Desenvolvido por:
+            Safira dos Santos • Luciele Jordânia • Letícia Sousa •
+            Sarah Nascimento • Isa Dafne • Ester Emília
+        </p>
+
+        <div class="footer-info">
+            <p><strong>Turma:</strong> 2º Ano</p>
+            <p><strong>Disciplina:</strong> Projeto de Desenvolvimento de Sistemas</p>
+            <p><strong>Escola:</strong> IFMA - Campus São José de Ribamar</p>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
