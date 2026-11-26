@@ -161,25 +161,28 @@ nav a:hover{
     flex-wrap:wrap;
 }
 
-.card{
-    width:320px;
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    transition:0.4s;
+
+.cartão {
+    width: 290px;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.4s;
 }
 
-.card:hover{
-    transform:translateY(-10px);
+.cartão:hover {
+    transform: translateY(-10px);
 }
 
-.card img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
-    object-position:center top;
+.cartão img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
 }
+
 
 .card h3{
     padding:20px 20px 10px;
