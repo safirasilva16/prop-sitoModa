@@ -162,13 +162,16 @@ nav a:hover{
 }
 
 
+
 .cartão {
     width: 290px;
+    max-width: 100%;
     background: white;
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     transition: 0.4s;
+    box-sizing: border-box;
 }
 
 .cartão:hover {
@@ -176,12 +179,13 @@ nav a:hover{
 }
 
 .cartão img {
+    display: block;
     width: 100%;
+    max-width: 290px;
     height: 320px;
     object-fit: contain;
     object-position: center;
-    display: block;
-    background: #f8f6f2;
+    margin: 0 auto;
 }
 
 
