@@ -161,9 +161,7 @@ nav a:hover{
     flex-wrap:wrap;
 }
 
-
-
-.cartão {
+.card {
     width: 290px;
     flex: 0 0 290px;
     max-width: 100%;
@@ -175,11 +173,11 @@ nav a:hover{
     box-sizing: border-box;
 }
 
-.cartão:hover {
+.card:hover {
     transform: translateY(-10px);
 }
 
-.cartão img {
+.card img {
     display: block;
     width: 100%;
     max-width: 290px;
