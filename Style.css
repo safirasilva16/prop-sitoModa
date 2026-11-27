@@ -160,6 +160,10 @@ nav a:hover{
     justify-content:center;
     flex-wrap:wrap;
 }
+.card{
+    width: 320px;
+    border-radius: 20px;
+}
 
 .card img {
     display: block;
@@ -177,10 +181,9 @@ nav a:hover{
 
 .card img {
     display: block;
-    width: 320px;
+    width: 100%;
     max-width: 290px;
     height: 320px;
-    border-radius: 20px;
     object-fit: contain;
     object-position: center;
     margin: 0 auto;
