@@ -161,15 +161,14 @@ nav a:hover{
     flex-wrap:wrap;
 }
 
-.card {
-    width: 290px;
-    max-width: 100%;
-    background: white;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: 0.4s;
-    box-sizing: border-box;
+.card img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
 }
 
 .card:hover {
