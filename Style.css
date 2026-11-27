@@ -177,9 +177,10 @@ nav a:hover{
 
 .card img {
     display: block;
-    width: 100%;
+    width: 320px;
     max-width: 290px;
     height: 320px;
+    border-radius: 20px;
     object-fit: contain;
     object-position: center;
     margin: 0 auto;
